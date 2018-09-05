@@ -9,7 +9,7 @@ package pilas;
  *
  * @author ICABOA
  */
-public class Pilas {
+public class Main {
 
     /**
      * @param args the command line arguments

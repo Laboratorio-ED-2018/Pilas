@@ -13,7 +13,7 @@ public interface PilaADT<T> {
     
     public T peek() throws Exception;
     public T pop() throws Exception;
-    public void push();
+    public void push(T t);
     public boolean isEmpty();
     
 }

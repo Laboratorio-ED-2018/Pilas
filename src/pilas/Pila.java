@@ -45,7 +45,22 @@ public class Pila<T> implements PilaADT<T> {
     }
 
     @Override
-    public void push() {
+    public void push(T t) {
+        if (count == arr.length) {
+            expand();
+        } 
+        
+        arr[count] = t;
+        count ++;
+    }
+    
+    private void expand() {
+        T[] aux = (T[]) new Object[arr.length*2];
+        for (int i = 0; i < arr.length; i++) {
+            T t = arr[i];
+            aux[i] = t;
+        }
+        arr = aux;
     }
 
     @Override
